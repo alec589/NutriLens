@@ -1,7 +1,8 @@
 from openai import OpenAI
+from config import OPENAI_API_KEY
 
-client = OpenAI(api_key="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")
-
+#import API
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_response(prompt):
 

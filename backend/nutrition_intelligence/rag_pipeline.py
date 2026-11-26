@@ -1,5 +1,7 @@
 from retriever import retrieve
 from llm import generate_response
+import json
+from validator import validate_response
 
 # construct prompt
 def build_prompt(question, food_log):
@@ -25,12 +27,25 @@ Retrieved Nutrition Knowledge:
 User Question:
 {question}
 
-Provide:
-1. Nutrition advice
-2. A recommended meal
+## ready for diffusion model 
+Return your response as a valid JSON object
+with the following fields:
+
+- nutrition_advice: A string containing nutrition advice.
+- meal_name: A string containing one recommended meal.
+- ingredients: A list of ingredient names.
+- image_prompt: A detailed visual description of the
+  recommended meal for an image generation model.
+
+Recommend only one meal.
+
+Do not include Markdown or code fences.
 
 If the information is insufficient, acknowledge the
 limitation instead of inventing facts.
+
+Do not assume portion sizes, calorie intake, allergies,
+or dietary restrictions that are not provided.
 """
 
     return prompt
@@ -42,7 +57,11 @@ def run_rag(question, food_log):
 
     answer = generate_response(prompt)
 
-    return answer
+    result = json.loads(answer)
+
+    result = validate_response(result)
+
+    return result
 
 if __name__ == "__main__":
 
@@ -53,8 +72,20 @@ if __name__ == "__main__":
 
     question = input("Enter your question: ")
 
-    answer = run_rag(question, food_log)
+    result = run_rag(question, food_log)
 
-    print("\nNutriLens Recommendation:\n")
+    print("\nNutrition Advice:")
+    print(result["nutrition_advice"])
 
-    print(answer)
+    print("\nRecommended Meal:")
+    print(result["meal_name"])
+
+    print("\nIngredients:")
+    for ingredient in result["ingredients"]:
+        print("-", ingredient)
+
+    print("\nImage Prompt:")
+    print(result["image_prompt"])
+
+    print("\nData Type:")
+    print(type(result))
