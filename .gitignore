@@ -26,3 +26,5 @@ git push origin main
 config.py
 __pycache__/
 *.pyc
+.pytest_cache/
+backend/meal_logging/data/*.db

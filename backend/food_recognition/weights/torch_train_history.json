@@ -1,0 +1,97 @@
+{
+  "model_name": "NutriLens-MobileNetV2-Food101",
+  "device": "mps",
+  "weights_path": "/Users/alec/Desktop/NutriLens/backend/food_recognition/weights/mobilenet_v2_food.pt",
+  "best_epoch": 9,
+  "best_val_acc": 0.7625,
+  "best_val_top3": 0.9146,
+  "num_train": 1440,
+  "num_val": 480,
+  "elapsed_sec": 68.85,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.864,
+      "train_acc": 0.2021,
+      "val_acc": 0.5292,
+      "val_top3": 0.7354
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.9323,
+      "train_acc": 0.5146,
+      "val_acc": 0.6729,
+      "val_top3": 0.8625
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.4709,
+      "train_acc": 0.7153,
+      "val_acc": 0.6979,
+      "val_top3": 0.8833
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.2924,
+      "train_acc": 0.7799,
+      "val_acc": 0.7063,
+      "val_top3": 0.8938
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.1859,
+      "train_acc": 0.8271,
+      "val_acc": 0.7438,
+      "val_top3": 0.8917
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.0828,
+      "train_acc": 0.8674,
+      "val_acc": 0.7354,
+      "val_top3": 0.9042
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.0077,
+      "train_acc": 0.9028,
+      "val_acc": 0.7583,
+      "val_top3": 0.9021
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.9828,
+      "train_acc": 0.9181,
+      "val_acc": 0.7417,
+      "val_top3": 0.9042
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.9493,
+      "train_acc": 0.9326,
+      "val_acc": 0.7625,
+      "val_top3": 0.9146
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.9296,
+      "train_acc": 0.9354,
+      "val_acc": 0.7333,
+      "val_top3": 0.9187
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.9005,
+      "train_acc": 0.9521,
+      "val_acc": 0.7479,
+      "val_top3": 0.9125
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.9153,
+      "train_acc": 0.9368,
+      "val_acc": 0.7542,
+      "val_top3": 0.9167
+    }
+  ]
+}
