@@ -1,3 +1,6 @@
+import sys
+from backend.meal_generation.diffusion import generate_meal_image, load_image_model
+
 recommendation = {
     "meal_name": "Tofu rice bowl",
     "ingredients": ["tofu", "rice", "broccoli"],
@@ -5,18 +8,26 @@ recommendation = {
     "image_prompt": "An overhead photo of a tofu rice bowl with broccoli.",
 }
 
-# Read the meal name from the recommendation.
+# read meal name from recommendation
 meal_name = recommendation["meal_name"]
 print(meal_name)
 
-# Display each ingredient on its own line.
+# display each ingredient 
 print("Ingredients:")
 for ingredient in recommendation["ingredients"]:
     print("-", ingredient)
 
-# Display the nutrition advice.
+# show nutrition advice
 print("Nutrition advice:", recommendation["nutrition_advice"])
 
-# Read the description for the meal image.
+# read description for meal image
 image_prompt = recommendation["image_prompt"]
 print("Image prompt:", image_prompt)
+
+
+# generate meal image when we need 
+if "--generate-image" in sys.argv[1:]:
+    image_model = load_image_model()
+    image = generate_meal_image(image_prompt, image_model)
+    image.save("meal.png")
+    print("Saved meal.png")
