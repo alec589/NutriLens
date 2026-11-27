@@ -16,7 +16,7 @@ recommendation = {
     "image_prompt": "An overhead photo of a tofu rice bowl with broccoli.",
 }
 
-# Read the team's recommendation when a JSON file is provided.
+#read recommendation from JSON file（llm provide）
 if args.recommendation:
     try:
         with open(args.recommendation, encoding="utf-8") as file:
