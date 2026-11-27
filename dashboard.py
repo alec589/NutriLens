@@ -1,8 +1,6 @@
 import json
-
 import streamlit as st
 from backend.nutrition_intelligence.validator import validate_response
-from backend.meal_generation.diffusion import generate_meal_image, load_image_model
 
 
 recommendation = {
@@ -35,9 +33,19 @@ st.subheader("Nutrition advice")
 st.write(recommendation["nutrition_advice"])
 
 # generate a meal image when we click the button
+image_prompt = recommendation["image_prompt"]
 clicked = st.button("Generate meal image")
 if clicked:
+    from backend.meal_generation.diffusion import generate_meal_image, load_image_model
     with st.spinner("Generating meal image..."):
-        image_model = load_image_model()
-        image = generate_meal_image(recommendation["image_prompt"], image_model)
-    st.image(image)
+        # load the model once per browser session
+        if "image_model" not in st.session_state:
+            st.session_state["image_model"] = load_image_model()
+        image_model = st.session_state["image_model"]
+        image = generate_meal_image(image_prompt, image_model)
+    st.session_state["meal_image"] = (image_prompt, image)
+
+# keep showing the same image when prompt don't change
+saved_image = st.session_state.get("meal_image")
+if saved_image is not None and saved_image[0] == image_prompt:
+    st.image(saved_image[1])
