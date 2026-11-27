@@ -1,0 +1,515 @@
+[
+  {
+    "key": "caesar_salad",
+    "name_en": "Caesar salad",
+    "category": "salad",
+    "aliases": ["chicken caesar salad", "salad"],
+    "default_serving_g": 260,
+    "serving_unit": "1 bowl (260g)",
+    "per_100g": {"calories_kcal": 135, "carbs_g": 6.8, "protein_g": 9.4, "fat_g": 7.9, "fiber_g": 2.1}
+  },
+  {
+    "key": "greek_salad",
+    "name_en": "Greek salad",
+    "category": "salad",
+    "aliases": ["feta salad", "mediterranean salad"],
+    "default_serving_g": 250,
+    "serving_unit": "1 bowl (250g)",
+    "per_100g": {"calories_kcal": 112, "carbs_g": 5.2, "protein_g": 4.1, "fat_g": 8.6, "fiber_g": 1.8}
+  },
+  {
+    "key": "caprese_salad",
+    "name_en": "Caprese salad",
+    "category": "salad",
+    "aliases": ["tomato mozzarella salad"],
+    "default_serving_g": 220,
+    "serving_unit": "1 plate (220g)",
+    "per_100g": {"calories_kcal": 146, "carbs_g": 3.4, "protein_g": 8.2, "fat_g": 11.1, "fiber_g": 0.9}
+  },
+  {
+    "key": "club_sandwich",
+    "name_en": "Club sandwich",
+    "category": "sandwich",
+    "aliases": ["turkey club", "sandwich", "deli sandwich"],
+    "default_serving_g": 250,
+    "serving_unit": "1 sandwich (250g)",
+    "per_100g": {"calories_kcal": 224, "carbs_g": 23.0, "protein_g": 12.8, "fat_g": 8.9, "fiber_g": 1.9}
+  },
+  {
+    "key": "grilled_cheese_sandwich",
+    "name_en": "Grilled cheese sandwich",
+    "category": "sandwich",
+    "aliases": ["grilled cheese"],
+    "default_serving_g": 160,
+    "serving_unit": "1 sandwich (160g)",
+    "per_100g": {"calories_kcal": 312, "carbs_g": 27.5, "protein_g": 12.6, "fat_g": 16.8, "fiber_g": 1.6}
+  },
+  {
+    "key": "pulled_pork_sandwich",
+    "name_en": "Pulled pork sandwich",
+    "category": "sandwich",
+    "aliases": ["bbq pork sandwich", "pulled pork"],
+    "default_serving_g": 260,
+    "serving_unit": "1 sandwich (260g)",
+    "per_100g": {"calories_kcal": 236, "carbs_g": 24.8, "protein_g": 13.4, "fat_g": 9.2, "fiber_g": 1.4}
+  },
+  {
+    "key": "hamburger",
+    "name_en": "Hamburger",
+    "category": "american_classic",
+    "aliases": ["cheeseburger", "beef burger", "burger"],
+    "default_serving_g": 260,
+    "serving_unit": "1 burger (260g)",
+    "per_100g": {"calories_kcal": 268, "carbs_g": 24.0, "protein_g": 14.2, "fat_g": 12.8, "fiber_g": 1.4}
+  },
+  {
+    "key": "hot_dog",
+    "name_en": "Hot dog",
+    "category": "american_classic",
+    "aliases": ["frankfurter", "chili dog"],
+    "default_serving_g": 150,
+    "serving_unit": "1 hot dog (150g)",
+    "per_100g": {"calories_kcal": 272, "carbs_g": 21.4, "protein_g": 10.6, "fat_g": 15.8, "fiber_g": 0.9}
+  },
+  {
+    "key": "pizza",
+    "name_en": "Pizza",
+    "category": "american_classic",
+    "aliases": ["pepperoni pizza", "cheese pizza", "margherita pizza"],
+    "default_serving_g": 280,
+    "serving_unit": "2 slices (280g)",
+    "per_100g": {"calories_kcal": 266, "carbs_g": 30.0, "protein_g": 11.4, "fat_g": 10.8, "fiber_g": 1.8}
+  },
+  {
+    "key": "macaroni_and_cheese",
+    "name_en": "Mac and cheese",
+    "category": "american_classic",
+    "aliases": ["macaroni and cheese", "baked mac and cheese"],
+    "default_serving_g": 300,
+    "serving_unit": "1 bowl (300g)",
+    "per_100g": {"calories_kcal": 195, "carbs_g": 20.8, "protein_g": 8.4, "fat_g": 8.6, "fiber_g": 1.1}
+  },
+  {
+    "key": "spaghetti_bolognese",
+    "name_en": "Spaghetti bolognese",
+    "category": "pasta",
+    "aliases": ["spaghetti meat sauce", "pasta bolognese", "spaghetti"],
+    "default_serving_g": 350,
+    "serving_unit": "1 plate (350g)",
+    "per_100g": {"calories_kcal": 148, "carbs_g": 18.6, "protein_g": 8.1, "fat_g": 4.4, "fiber_g": 1.7}
+  },
+  {
+    "key": "lasagna",
+    "name_en": "Lasagna",
+    "category": "pasta",
+    "aliases": ["meat lasagna", "baked lasagna"],
+    "default_serving_g": 320,
+    "serving_unit": "1 piece (320g)",
+    "per_100g": {"calories_kcal": 162, "carbs_g": 15.4, "protein_g": 9.8, "fat_g": 6.8, "fiber_g": 1.4}
+  },
+  {
+    "key": "grilled_salmon",
+    "name_en": "Grilled salmon",
+    "category": "seafood",
+    "aliases": ["baked salmon", "salmon fillet", "salmon and veggies"],
+    "default_serving_g": 230,
+    "serving_unit": "1 fillet + greens (230g)",
+    "per_100g": {"calories_kcal": 196, "carbs_g": 2.1, "protein_g": 20.4, "fat_g": 11.6, "fiber_g": 0.7}
+  },
+  {
+    "key": "steak",
+    "name_en": "Steak",
+    "category": "american_classic",
+    "aliases": ["sirloin steak", "steak and veggies", "grilled steak"],
+    "default_serving_g": 280,
+    "serving_unit": "1 plate (280g)",
+    "per_100g": {"calories_kcal": 208, "carbs_g": 2.5, "protein_g": 24.2, "fat_g": 10.8, "fiber_g": 0.6}
+  },
+  {
+    "key": "tacos",
+    "name_en": "Tacos",
+    "category": "mexican_american",
+    "aliases": ["beef tacos", "chicken tacos", "street tacos"],
+    "default_serving_g": 240,
+    "serving_unit": "2 tacos (240g)",
+    "per_100g": {"calories_kcal": 212, "carbs_g": 20.4, "protein_g": 11.2, "fat_g": 9.4, "fiber_g": 2.6}
+  },
+  {
+    "key": "breakfast_burrito",
+    "name_en": "Breakfast burrito",
+    "category": "breakfast",
+    "aliases": ["egg burrito", "morning burrito"],
+    "default_serving_g": 270,
+    "serving_unit": "1 burrito (270g)",
+    "per_100g": {"calories_kcal": 215, "carbs_g": 21.8, "protein_g": 10.6, "fat_g": 9.4, "fiber_g": 2.3}
+  },
+  {
+    "key": "pancakes",
+    "name_en": "Pancakes",
+    "category": "breakfast",
+    "aliases": ["pancakes and berries", "blueberry pancakes"],
+    "default_serving_g": 230,
+    "serving_unit": "2 pancakes (230g)",
+    "per_100g": {"calories_kcal": 227, "carbs_g": 36.2, "protein_g": 5.4, "fat_g": 6.8, "fiber_g": 1.6}
+  },
+  {
+    "key": "french_toast",
+    "name_en": "French toast",
+    "category": "breakfast",
+    "aliases": ["cinnamon french toast"],
+    "default_serving_g": 210,
+    "serving_unit": "2 slices (210g)",
+    "per_100g": {"calories_kcal": 238, "carbs_g": 31.2, "protein_g": 7.6, "fat_g": 8.9, "fiber_g": 1.5}
+  },
+  {
+    "key": "eggs_benedict",
+    "name_en": "Eggs benedict",
+    "category": "breakfast",
+    "aliases": ["poached eggs benedict"],
+    "default_serving_g": 240,
+    "serving_unit": "1 serving (240g)",
+    "per_100g": {"calories_kcal": 228, "carbs_g": 13.8, "protein_g": 11.4, "fat_g": 14.2, "fiber_g": 0.8}
+  },
+  {
+    "key": "omelette",
+    "name_en": "Omelette",
+    "category": "breakfast",
+    "aliases": ["cheese omelette", "egg omelette", "omelet"],
+    "default_serving_g": 210,
+    "serving_unit": "3-egg omelette (210g)",
+    "per_100g": {"calories_kcal": 172, "carbs_g": 2.2, "protein_g": 12.8, "fat_g": 12.4, "fiber_g": 0.4}
+  },
+  {
+    "key": "chicken_wings",
+    "name_en": "Chicken wings",
+    "category": "american_classic",
+    "aliases": ["buffalo wings", "hot wings", "wings"],
+    "default_serving_g": 250,
+    "serving_unit": "6 wings (250g)",
+    "per_100g": {"calories_kcal": 254, "carbs_g": 3.2, "protein_g": 21.8, "fat_g": 16.8, "fiber_g": 0.2}
+  },
+  {
+    "key": "fried_rice",
+    "name_en": "Fried rice",
+    "category": "grain_bowl",
+    "aliases": ["chicken fried rice", "egg fried rice"],
+    "default_serving_g": 320,
+    "serving_unit": "1 bowl (320g)",
+    "per_100g": {"calories_kcal": 168, "carbs_g": 24.5, "protein_g": 5.4, "fat_g": 5.3, "fiber_g": 1.2}
+  },
+  {
+    "key": "ramen",
+    "name_en": "Ramen",
+    "category": "noodles",
+    "aliases": ["tonkotsu ramen", "japanese ramen"],
+    "default_serving_g": 500,
+    "serving_unit": "1 bowl (500g)",
+    "per_100g": {"calories_kcal": 112, "carbs_g": 14.5, "protein_g": 5.8, "fat_g": 3.4, "fiber_g": 0.9}
+  },
+  {
+    "key": "frozen_yogurt",
+    "name_en": "Frozen yogurt",
+    "category": "snack",
+    "aliases": ["froyo", "berry frozen yogurt"],
+    "default_serving_g": 180,
+    "serving_unit": "1 cup (180g)",
+    "per_100g": {"calories_kcal": 127, "carbs_g": 22.8, "protein_g": 3.8, "fat_g": 2.4, "fiber_g": 0.6}
+  },
+  {
+    "key": "tofu_rice_bowl",
+    "name_en": "Tofu rice bowl",
+    "category": "grain_bowl",
+    "aliases": ["tofu bowl", "teriyaki tofu bowl", "tofu rice"],
+    "default_serving_g": 380,
+    "serving_unit": "1 bowl (380g)",
+    "per_100g": {"calories_kcal": 132, "carbs_g": 18.5, "protein_g": 6.8, "fat_g": 3.4, "fiber_g": 2.1}
+  },
+  {
+    "key": "chicken_and_rice",
+    "name_en": "Chicken and rice",
+    "category": "grain_bowl",
+    "aliases": ["chicken rice bowl", "grilled chicken and rice", "chicken rice"],
+    "default_serving_g": 400,
+    "serving_unit": "1 bowl (400g)",
+    "per_100g": {"calories_kcal": 152, "carbs_g": 18.0, "protein_g": 11.8, "fat_g": 3.5, "fiber_g": 1.1}
+  },
+  {
+    "key": "eggs_and_toast",
+    "name_en": "Eggs and toast",
+    "category": "breakfast",
+    "aliases": ["scrambled eggs and toast", "fried eggs and toast", "egg toast"],
+    "default_serving_g": 190,
+    "serving_unit": "1 plate (190g)",
+    "per_100g": {"calories_kcal": 218, "carbs_g": 22.0, "protein_g": 10.5, "fat_g": 9.8, "fiber_g": 1.8}
+  },
+  {
+    "key": "avocado_toast",
+    "name_en": "Avocado toast",
+    "category": "breakfast",
+    "aliases": ["avocado sourdough toast", "avo toast"],
+    "default_serving_g": 170,
+    "serving_unit": "1 serving (170g)",
+    "per_100g": {"calories_kcal": 212, "carbs_g": 19.5, "protein_g": 6.8, "fat_g": 12.2, "fiber_g": 4.5}
+  },
+  {
+    "key": "oatmeal_berry_bowl",
+    "name_en": "Oatmeal berry bowl",
+    "category": "breakfast",
+    "aliases": ["oatmeal", "berry oatmeal", "protein oats"],
+    "default_serving_g": 280,
+    "serving_unit": "1 bowl (280g)",
+    "per_100g": {"calories_kcal": 108, "carbs_g": 17.8, "protein_g": 4.2, "fat_g": 2.1, "fiber_g": 2.9}
+  },
+  {
+    "key": "chicken_burrito_bowl",
+    "name_en": "Chicken burrito bowl",
+    "category": "grain_bowl",
+    "aliases": ["burrito bowl", "chipotle bowl", "tex mex bowl"],
+    "default_serving_g": 420,
+    "serving_unit": "1 bowl (420g)",
+    "per_100g": {"calories_kcal": 156, "carbs_g": 18.2, "protein_g": 11.4, "fat_g": 4.2, "fiber_g": 3.1}
+  },
+  {
+    "key": "white_rice",
+    "name_en": "White rice",
+    "category": "grain",
+    "aliases": ["steamed rice", "rice", "jasmine rice"],
+    "default_serving_g": 180,
+    "serving_unit": "1 cup cooked (180g)",
+    "per_100g": {"calories_kcal": 130, "carbs_g": 28.2, "protein_g": 2.7, "fat_g": 0.3, "fiber_g": 0.4}
+  },
+  {
+    "key": "brown_rice",
+    "name_en": "Brown rice",
+    "category": "grain",
+    "aliases": ["whole grain rice"],
+    "default_serving_g": 180,
+    "serving_unit": "1 cup cooked (180g)",
+    "per_100g": {"calories_kcal": 123, "carbs_g": 25.6, "protein_g": 2.7, "fat_g": 1.0, "fiber_g": 1.8}
+  },
+  {
+    "key": "quinoa",
+    "name_en": "Cooked quinoa",
+    "category": "grain",
+    "aliases": ["quinoa"],
+    "default_serving_g": 150,
+    "serving_unit": "1 cup cooked (150g)",
+    "per_100g": {"calories_kcal": 120, "carbs_g": 21.3, "protein_g": 4.4, "fat_g": 1.9, "fiber_g": 2.8}
+  },
+  {
+    "key": "oats",
+    "name_en": "Rolled oats",
+    "category": "grain",
+    "aliases": ["oats", "dry oats"],
+    "default_serving_g": 50,
+    "serving_unit": "1/2 cup dry (50g)",
+    "per_100g": {"calories_kcal": 379, "carbs_g": 67.7, "protein_g": 13.2, "fat_g": 6.5, "fiber_g": 10.1}
+  },
+  {
+    "key": "toast",
+    "name_en": "Whole wheat bread",
+    "category": "grain",
+    "aliases": ["toast", "bread", "whole wheat toast", "sourdough bread"],
+    "default_serving_g": 65,
+    "serving_unit": "2 slices (65g)",
+    "per_100g": {"calories_kcal": 252, "carbs_g": 43.0, "protein_g": 12.0, "fat_g": 3.5, "fiber_g": 6.0}
+  },
+  {
+    "key": "bagel",
+    "name_en": "Plain bagel",
+    "category": "grain",
+    "aliases": ["bagel", "everything bagel"],
+    "default_serving_g": 105,
+    "serving_unit": "1 medium bagel (105g)",
+    "per_100g": {"calories_kcal": 257, "carbs_g": 50.5, "protein_g": 10.0, "fat_g": 1.5, "fiber_g": 2.3}
+  },
+  {
+    "key": "sweet_potato",
+    "name_en": "Baked sweet potato",
+    "category": "grain",
+    "aliases": ["sweet potato"],
+    "default_serving_g": 150,
+    "serving_unit": "1 medium (150g)",
+    "per_100g": {"calories_kcal": 90, "carbs_g": 20.7, "protein_g": 2.0, "fat_g": 0.2, "fiber_g": 3.3}
+  },
+  {
+    "key": "chicken_breast",
+    "name_en": "Grilled chicken breast",
+    "category": "protein",
+    "aliases": ["chicken breast", "chicken", "grilled chicken"],
+    "default_serving_g": 150,
+    "serving_unit": "1 breast (150g)",
+    "per_100g": {"calories_kcal": 165, "carbs_g": 0.0, "protein_g": 31.0, "fat_g": 3.6, "fiber_g": 0.0}
+  },
+  {
+    "key": "turkey_breast",
+    "name_en": "Roasted turkey breast",
+    "category": "protein",
+    "aliases": ["turkey", "deli turkey", "ground turkey"],
+    "default_serving_g": 120,
+    "serving_unit": "4 oz (120g)",
+    "per_100g": {"calories_kcal": 135, "carbs_g": 0.5, "protein_g": 29.0, "fat_g": 1.6, "fiber_g": 0.0}
+  },
+  {
+    "key": "tofu",
+    "name_en": "Firm tofu",
+    "category": "protein",
+    "aliases": ["tofu", "extra firm tofu"],
+    "default_serving_g": 150,
+    "serving_unit": "1 serving (150g)",
+    "per_100g": {"calories_kcal": 88, "carbs_g": 2.4, "protein_g": 9.4, "fat_g": 4.8, "fiber_g": 0.9}
+  },
+  {
+    "key": "egg",
+    "name_en": "Egg",
+    "category": "protein",
+    "aliases": ["eggs", "boiled egg", "scrambled eggs", "fried egg"],
+    "default_serving_g": 55,
+    "serving_unit": "1 large egg (55g)",
+    "per_100g": {"calories_kcal": 144, "carbs_g": 0.7, "protein_g": 12.6, "fat_g": 9.5, "fiber_g": 0.0}
+  },
+  {
+    "key": "salmon",
+    "name_en": "Atlantic salmon",
+    "category": "protein",
+    "aliases": ["salmon", "salmon fillet"],
+    "default_serving_g": 140,
+    "serving_unit": "5 oz fillet (140g)",
+    "per_100g": {"calories_kcal": 208, "carbs_g": 0.0, "protein_g": 20.4, "fat_g": 13.4, "fiber_g": 0.0}
+  },
+  {
+    "key": "black_beans",
+    "name_en": "Cooked black beans",
+    "category": "protein",
+    "aliases": ["black beans", "beans"],
+    "default_serving_g": 130,
+    "serving_unit": "3/4 cup (130g)",
+    "per_100g": {"calories_kcal": 132, "carbs_g": 23.7, "protein_g": 8.9, "fat_g": 0.5, "fiber_g": 8.7}
+  },
+  {
+    "key": "cheddar_cheese",
+    "name_en": "Cheddar cheese",
+    "category": "dairy",
+    "aliases": ["cheese", "sliced cheddar", "shredded cheese"],
+    "default_serving_g": 28,
+    "serving_unit": "1 oz (28g)",
+    "per_100g": {"calories_kcal": 403, "carbs_g": 1.3, "protein_g": 24.9, "fat_g": 33.1, "fiber_g": 0.0}
+  },
+  {
+    "key": "greek_yogurt",
+    "name_en": "Plain Greek yogurt",
+    "category": "dairy",
+    "aliases": ["greek yogurt", "yogurt"],
+    "default_serving_g": 170,
+    "serving_unit": "1 container (170g)",
+    "per_100g": {"calories_kcal": 73, "carbs_g": 4.0, "protein_g": 10.0, "fat_g": 1.9, "fiber_g": 0.0}
+  },
+  {
+    "key": "milk",
+    "name_en": "2% Reduced fat milk",
+    "category": "dairy",
+    "aliases": ["milk", "whole milk", "dairy milk"],
+    "default_serving_g": 244,
+    "serving_unit": "1 cup (244ml)",
+    "per_100g": {"calories_kcal": 50, "carbs_g": 4.8, "protein_g": 3.3, "fat_g": 2.0, "fiber_g": 0.0}
+  },
+  {
+    "key": "broccoli",
+    "name_en": "Broccoli",
+    "category": "vegetable",
+    "aliases": ["steamed broccoli", "roasted broccoli"],
+    "default_serving_g": 120,
+    "serving_unit": "1.5 cups (120g)",
+    "per_100g": {"calories_kcal": 35, "carbs_g": 7.2, "protein_g": 2.4, "fat_g": 0.4, "fiber_g": 3.3}
+  },
+  {
+    "key": "mixed_greens",
+    "name_en": "Mixed salad greens",
+    "category": "vegetable",
+    "aliases": ["spring mix", "romaine lettuce", "spinach", "lettuce"],
+    "default_serving_g": 85,
+    "serving_unit": "3 cups (85g)",
+    "per_100g": {"calories_kcal": 20, "carbs_g": 3.6, "protein_g": 2.2, "fat_g": 0.3, "fiber_g": 2.1}
+  },
+  {
+    "key": "avocado",
+    "name_en": "Avocado",
+    "category": "fat",
+    "aliases": ["sliced avocado", "mashed avocado"],
+    "default_serving_g": 75,
+    "serving_unit": "1/2 medium avocado (75g)",
+    "per_100g": {"calories_kcal": 160, "carbs_g": 8.5, "protein_g": 2.0, "fat_g": 14.7, "fiber_g": 6.7}
+  },
+  {
+    "key": "apple",
+    "name_en": "Apple",
+    "category": "fruit",
+    "aliases": ["honeycrisp apple", "gala apple"],
+    "default_serving_g": 180,
+    "serving_unit": "1 medium apple (180g)",
+    "per_100g": {"calories_kcal": 52, "carbs_g": 13.8, "protein_g": 0.3, "fat_g": 0.2, "fiber_g": 2.4}
+  },
+  {
+    "key": "banana",
+    "name_en": "Banana",
+    "category": "fruit",
+    "aliases": ["medium banana"],
+    "default_serving_g": 120,
+    "serving_unit": "1 medium banana (120g)",
+    "per_100g": {"calories_kcal": 89, "carbs_g": 22.8, "protein_g": 1.1, "fat_g": 0.3, "fiber_g": 2.6}
+  },
+  {
+    "key": "blueberry",
+    "name_en": "Blueberries",
+    "category": "fruit",
+    "aliases": ["blueberry", "fresh blueberries"],
+    "default_serving_g": 75,
+    "serving_unit": "1/2 cup (75g)",
+    "per_100g": {"calories_kcal": 57, "carbs_g": 14.5, "protein_g": 0.7, "fat_g": 0.3, "fiber_g": 2.4}
+  },
+  {
+    "key": "almonds",
+    "name_en": "Roasted almonds",
+    "category": "fat",
+    "aliases": ["almonds", "nuts"],
+    "default_serving_g": 28,
+    "serving_unit": "1 oz / 23 almonds (28g)",
+    "per_100g": {"calories_kcal": 579, "carbs_g": 21.6, "protein_g": 21.2, "fat_g": 49.9, "fiber_g": 12.5}
+  },
+  {
+    "key": "peanut_butter",
+    "name_en": "Peanut butter",
+    "category": "fat",
+    "aliases": ["creamy peanut butter", "pb"],
+    "default_serving_g": 32,
+    "serving_unit": "2 tbsp (32g)",
+    "per_100g": {"calories_kcal": 588, "carbs_g": 20.0, "protein_g": 25.1, "fat_g": 50.4, "fiber_g": 6.0}
+  },
+  {
+    "key": "olive_oil",
+    "name_en": "Olive oil",
+    "category": "fat",
+    "aliases": ["extra virgin olive oil", "cooking oil"],
+    "default_serving_g": 14,
+    "serving_unit": "1 tbsp (14g)",
+    "per_100g": {"calories_kcal": 884, "carbs_g": 0.0, "protein_g": 0.0, "fat_g": 100.0, "fiber_g": 0.0}
+  },
+  {
+    "key": "latte",
+    "name_en": "Cafe latte",
+    "category": "beverage",
+    "aliases": ["iced latte", "coffee latte", "latte"],
+    "default_serving_g": 350,
+    "serving_unit": "12 oz grande (350ml)",
+    "per_100g": {"calories_kcal": 42, "carbs_g": 3.6, "protein_g": 2.2, "fat_g": 2.0, "fiber_g": 0.0}
+  },
+  {
+    "key": "orange_juice",
+    "name_en": "Orange juice",
+    "category": "beverage",
+    "aliases": ["oj", "fresh orange juice"],
+    "default_serving_g": 248,
+    "serving_unit": "8 oz glass (248ml)",
+    "per_100g": {"calories_kcal": 45, "carbs_g": 10.4, "protein_g": 0.7, "fat_g": 0.2, "fiber_g": 0.2}
+  }
+]
